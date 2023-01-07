@@ -171,6 +171,7 @@ Edit `_server.http.accessAddress_` and `_server.game.accessAddress_` from `127.0
 ```bash
 nano ~/Grasscutter/config.json
 ```
+
 Example:
 ```json
 ...
@@ -245,12 +246,13 @@ sudo dpkg-reconfigure ca-certificates
 
 
 ### Configure `hosts` file on the server
+
 ```bash
-# open `hosts` on the server
 sudo nano /etc/hosts
+```
 
-# add the following lines and save
-
+Append the following lines to the `hosts` file
+```bash
 127.0.0.1 dispatchosglobal.yuanshen.com
 127.0.0.1 dispatchcnglobal.yuanshen.com
 127.0.0.1 osusadispatch.yuanshen.com
@@ -367,12 +369,12 @@ stop
 
 
 ##### MacOS test open port
-```bash
+```zsh
 nc -vnzu <ip> <port|port-range>
 ```
 
 
-### Basic topology
+##### Basic topology
 
 `Endpoints` -> `proxy-server:8080` -> `grasscutter-server:443`
 
