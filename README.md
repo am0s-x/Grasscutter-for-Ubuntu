@@ -173,7 +173,7 @@ nano ~/Grasscutter/config.json
 ```
 
 Example:
-```json
+```js
 ...
   "server": {
     "debugWhitelist": [],
